@@ -22,6 +22,7 @@
 #import "ReplicatorViewController.h"
 #import "AppReplicatorViewController.h"
 #import "DrawCircleViewController.h"
+#import "CustomPropertyViewController.h"
 
 @interface CoreAnimationViewController ()
 
@@ -198,6 +199,13 @@
             [basic release];
         }
             break;
+        case 14:
+        {
+            CustomPropertyViewController *basic = [[CustomPropertyViewController alloc] initWithNibName:@"CustomPropertyViewController" bundle:nil];
+            [self.navigationController pushViewController:basic animated:YES];
+            [basic release];
+        }
+            break;
         default:
             break;
     }
@@ -220,6 +228,7 @@
     [mArr addObject:@"Replicator"];
     [mArr addObject:@"AppReplicator"];
     [mArr addObject:@"DrawCircle"];
+    [mArr addObject:@"CustomProperty"];
     
     
     

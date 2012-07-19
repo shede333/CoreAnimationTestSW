@@ -25,6 +25,8 @@
 		5F3A211115995C0400D0A470 /* shop_show_detail_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F3A210715995C0400D0A470 /* shop_show_detail_4@2x.png */; };
 		5F3E7BD315AE711400AE64A7 /* ReplicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E7BD215AE711400AE64A7 /* ReplicatorView.m */; };
 		5F4CCF1C15B509CA00972FFC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4CCF1B15B509CA00972FFC /* CoreFoundation.framework */; };
+		5F6264E815B792AD002F0556 /* CustomPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6264E615B792AD002F0556 /* CustomPropertyViewController.m */; };
+		5F6264E915B792AD002F0556 /* CustomPropertyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F6264E715B792AD002F0556 /* CustomPropertyViewController.xib */; };
 		5F6839DA15B6489D00450CAB /* DrawCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6839D815B6489D00450CAB /* DrawCircleViewController.m */; };
 		5F6839DB15B6489D00450CAB /* DrawCircleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F6839D915B6489D00450CAB /* DrawCircleViewController.xib */; };
 		5F6839E415B66C2C00450CAB /* BezierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F6839E215B66C2C00450CAB /* BezierViewController.m */; };
@@ -97,6 +99,9 @@
 		5F3E7BD115AE711400AE64A7 /* ReplicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplicatorView.h; sourceTree = "<group>"; };
 		5F3E7BD215AE711400AE64A7 /* ReplicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplicatorView.m; sourceTree = "<group>"; };
 		5F4CCF1B15B509CA00972FFC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		5F6264E515B792AD002F0556 /* CustomPropertyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPropertyViewController.h; sourceTree = "<group>"; };
+		5F6264E615B792AD002F0556 /* CustomPropertyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPropertyViewController.m; sourceTree = "<group>"; };
+		5F6264E715B792AD002F0556 /* CustomPropertyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPropertyViewController.xib; sourceTree = "<group>"; };
 		5F6839D715B6489D00450CAB /* DrawCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawCircleViewController.h; sourceTree = "<group>"; };
 		5F6839D815B6489D00450CAB /* DrawCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawCircleViewController.m; sourceTree = "<group>"; };
 		5F6839D915B6489D00450CAB /* DrawCircleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawCircleViewController.xib; sourceTree = "<group>"; };
@@ -203,6 +208,16 @@
 				5F3A20F7159955DA00D0A470 /* KeyFrameValue.xib */,
 			);
 			name = keyFrameValue;
+			sourceTree = "<group>";
+		};
+		5F6264E315B7926F002F0556 /* CustomProperty */ = {
+			isa = PBXGroup;
+			children = (
+				5F6264E515B792AD002F0556 /* CustomPropertyViewController.h */,
+				5F6264E615B792AD002F0556 /* CustomPropertyViewController.m */,
+				5F6264E715B792AD002F0556 /* CustomPropertyViewController.xib */,
+			);
+			name = CustomProperty;
 			sourceTree = "<group>";
 		};
 		5F6839D515B6487200450CAB /* DrawCircle */ = {
@@ -424,6 +439,7 @@
 		8BE2BA85157CBC610084027B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				5F6264E315B7926F002F0556 /* CustomProperty */,
 				5F6839E015B66BD200450CAB /* Bezier */,
 				5F6839D515B6487200450CAB /* DrawCircle */,
 				5F76C67515B3C3DC00A700CF /* ReplicatorLayer */,
@@ -528,6 +544,7 @@
 				5F106BF015B3F60600459A59 /* AppReplicatorViewController.xib in Resources */,
 				5F6839DB15B6489D00450CAB /* DrawCircleViewController.xib in Resources */,
 				5F6839E515B66C2C00450CAB /* BezierViewController.xib in Resources */,
+				5F6264E915B792AD002F0556 /* CustomPropertyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +579,7 @@
 				5F6839DA15B6489D00450CAB /* DrawCircleViewController.m in Sources */,
 				5F6839E415B66C2C00450CAB /* BezierViewController.m in Sources */,
 				5F683A1F15B69DB000450CAB /* CustomLayer.m in Sources */,
+				5F6264E815B792AD002F0556 /* CustomPropertyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
