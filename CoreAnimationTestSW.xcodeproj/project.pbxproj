@@ -74,6 +74,8 @@
 		8BE2BA84157CBAC00084027B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BE2BA83157CBAC00084027B /* QuartzCore.framework */; };
 		8BE2BA8D157CC1620084027B /* BasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BE2BA8B157CC1620084027B /* BasicViewController.m */; };
 		8BE2BA8E157CC1620084027B /* BasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BE2BA8C157CC1620084027B /* BasicViewController.xib */; };
+		9E30EEA218C9E78E002359F7 /* 1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E30EEA018C9E78E002359F7 /* 1136.png */; };
+		9E30EEA318C9E78E002359F7 /* 960.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E30EEA118C9E78E002359F7 /* 960.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -171,6 +173,8 @@
 		8BE2BA8A157CC1620084027B /* BasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicViewController.h; sourceTree = "<group>"; };
 		8BE2BA8B157CC1620084027B /* BasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicViewController.m; sourceTree = "<group>"; };
 		8BE2BA8C157CC1620084027B /* BasicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicViewController.xib; sourceTree = "<group>"; };
+		9E30EEA018C9E78E002359F7 /* 1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1136.png; sourceTree = "<group>"; };
+		9E30EEA118C9E78E002359F7 /* 960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 960.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +336,8 @@
 		8B67E49E157D94F100163041 /* Res */ = {
 			isa = PBXGroup;
 			children = (
+				9E30EEA018C9E78E002359F7 /* 1136.png */,
+				9E30EEA118C9E78E002359F7 /* 960.png */,
 				5F8B356A1599AC590015ACB1 /* Soccer.png */,
 				5F3A20FE15995C0400D0A470 /* shop_show_detail_0.png */,
 				5F3A20FF15995C0400D0A470 /* shop_show_detail_0@2x.png */,
@@ -381,8 +387,6 @@
 		8BE2BA50157CBA020084027B = {
 			isa = PBXGroup;
 			children = (
-				8BE2BA83157CBAC00084027B /* QuartzCore.framework */,
-				8BE2BA81157CBAAC0084027B /* CoreText.framework */,
 				8BE2BA65157CBA020084027B /* CoreAnimationTestSW */,
 				8BE2BA5E157CBA020084027B /* Frameworks */,
 				8BE2BA5C157CBA020084027B /* Products */,
@@ -400,6 +404,8 @@
 		8BE2BA5E157CBA020084027B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8BE2BA83157CBAC00084027B /* QuartzCore.framework */,
+				8BE2BA81157CBAAC0084027B /* CoreText.framework */,
 				5F4CCF1B15B509CA00972FFC /* CoreFoundation.framework */,
 				8BE2BA5F157CBA020084027B /* UIKit.framework */,
 				8BE2BA61157CBA020084027B /* Foundation.framework */,
@@ -522,9 +528,11 @@
 				8B9D76971581FB8F00AA260A /* ContextArcViewController.xib in Resources */,
 				5F77259D158EFEC2002A7930 /* GraphicsViewController.xib in Resources */,
 				5F7725A6158EFF86002A7930 /* Animation2_1.xib in Resources */,
+				9E30EEA218C9E78E002359F7 /* 1136.png in Resources */,
 				5F7725B3158F05A0002A7930 /* balloon.jpg in Resources */,
 				5FC0E92715906C6200BAA92B /* Animation3_1.xib in Resources */,
 				5F2F9F251592CCFF00C3C9FE /* Animation4_1.xib in Resources */,
+				9E30EEA318C9E78E002359F7 /* 960.png in Resources */,
 				5F3A20F9159955DA00D0A470 /* KeyFrameValue.xib in Resources */,
 				5F3A210815995C0400D0A470 /* shop_show_detail_0.png in Resources */,
 				5F3A210915995C0400D0A470 /* shop_show_detail_0@2x.png in Resources */,

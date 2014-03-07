@@ -28,6 +28,7 @@
     // Override point for customization after application launch.
     self.viewController = [[[CoreAnimationViewController alloc] initWithNibName:@"CoreAnimationViewController" bundle:nil] autorelease];
     UINavigationController *nav = [[[UINavigationController alloc] initWithRootViewController:self.viewController] autorelease];
+    nav.navigationBar.translucent = NO;
     
     
     self.window.rootViewController = nav;
