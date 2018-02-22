@@ -31,12 +31,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-//    CAAnimation *animation = [self addKeyFrameAnimation];
-//    CAAnimation *animation2 = [self addKeyFrameAnimation2];
-//    CAAnimationGroup *group = [CAAnimationGroup animation];
-//    [group setAnimations:[NSArray arrayWithObjects:animation,animation2, nil]];
-//    group.duration = 10;
-//    group.autoreverses = YES;
+    CAAnimation *animation = [self addKeyFrameAnimation];
+    CAAnimation *animation2 = [self addKeyFrameAnimation2];
+    CAAnimationGroup *group = [CAAnimationGroup animation];
+    [group setAnimations:[NSArray arrayWithObjects:animation,animation2, nil]];
+    group.duration = 10;
+    group.autoreverses = YES;
     
     
     
@@ -51,7 +51,7 @@
     
     [self.view.layer addSublayer:subLayer];
     
-    
+    [subLayer addAnimation:animation2 forKey:@"s"];
 
     
 }

@@ -76,6 +76,13 @@
 		8BE2BA8E157CC1620084027B /* BasicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BE2BA8C157CC1620084027B /* BasicViewController.xib */; };
 		9E30EEA218C9E78E002359F7 /* 1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E30EEA018C9E78E002359F7 /* 1136.png */; };
 		9E30EEA318C9E78E002359F7 /* 960.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E30EEA118C9E78E002359F7 /* 960.png */; };
+		9EC209C31A109008009A7F47 /* Animation3DController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC209C21A109008009A7F47 /* Animation3DController.m */; };
+		9EC209C71A1093B3009A7F47 /* Animation3DController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EC209C61A1093B3009A7F47 /* Animation3DController.xib */; };
+		9EC209CA1A109B2E009A7F47 /* CoordinateLineUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC209C91A109B2E009A7F47 /* CoordinateLineUtil.m */; };
+		9EC209CD1A10A55C009A7F47 /* SWAnimation3DUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC209CC1A10A55C009A7F47 /* SWAnimation3DUtil.m */; };
+		9EC209D21A10A6EF009A7F47 /* UIView+Sizes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC209D11A10A6EF009A7F47 /* UIView+Sizes.m */; };
+		9EC209D71A11E36B009A7F47 /* sakula.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9EC209D61A11E36B009A7F47 /* sakula.jpg */; };
+		9EC209DD1A1207A5009A7F47 /* sakula_l.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EC209DC1A1207A5009A7F47 /* sakula_l.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -175,6 +182,17 @@
 		8BE2BA8C157CC1620084027B /* BasicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicViewController.xib; sourceTree = "<group>"; };
 		9E30EEA018C9E78E002359F7 /* 1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1136.png; sourceTree = "<group>"; };
 		9E30EEA118C9E78E002359F7 /* 960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 960.png; sourceTree = "<group>"; };
+		9EC209C11A109008009A7F47 /* Animation3DController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation3DController.h; sourceTree = "<group>"; };
+		9EC209C21A109008009A7F47 /* Animation3DController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animation3DController.m; sourceTree = "<group>"; };
+		9EC209C61A1093B3009A7F47 /* Animation3DController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Animation3DController.xib; sourceTree = "<group>"; };
+		9EC209C81A109B2E009A7F47 /* CoordinateLineUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinateLineUtil.h; sourceTree = "<group>"; };
+		9EC209C91A109B2E009A7F47 /* CoordinateLineUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinateLineUtil.m; sourceTree = "<group>"; };
+		9EC209CB1A10A55C009A7F47 /* SWAnimation3DUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWAnimation3DUtil.h; sourceTree = "<group>"; };
+		9EC209CC1A10A55C009A7F47 /* SWAnimation3DUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWAnimation3DUtil.m; sourceTree = "<group>"; };
+		9EC209D01A10A6EF009A7F47 /* UIView+Sizes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Sizes.h"; sourceTree = "<group>"; };
+		9EC209D11A10A6EF009A7F47 /* UIView+Sizes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Sizes.m"; sourceTree = "<group>"; };
+		9EC209D61A11E36B009A7F47 /* sakula.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sakula.jpg; sourceTree = "<group>"; };
+		9EC209DC1A1207A5009A7F47 /* sakula_l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sakula_l.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -425,6 +443,7 @@
 				8BE2BA7E157CBA2F0084027B /* CoreAnimationViewController.xib */,
 				5F7725AB158F0058002A7930 /* CALayer+Creat.h */,
 				5F7725AC158F0058002A7930 /* CALayer+Creat.m */,
+				9EC209CE1A10A6C5009A7F47 /* ThirdParty */,
 				8BE2BA85157CBC610084027B /* Class */,
 				8BE2BA66157CBA020084027B /* Supporting Files */,
 			);
@@ -445,6 +464,7 @@
 		8BE2BA85157CBC610084027B /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				9EC209C01A108FEA009A7F47 /* Animation3D */,
 				5F6264E315B7926F002F0556 /* CustomProperty */,
 				5F6839E015B66BD200450CAB /* Bezier */,
 				5F6839D515B6487200450CAB /* DrawCircle */,
@@ -462,6 +482,39 @@
 				8B9D76981581FB9400AA260A /* Circle */,
 			);
 			name = Class;
+			sourceTree = "<group>";
+		};
+		9EC209C01A108FEA009A7F47 /* Animation3D */ = {
+			isa = PBXGroup;
+			children = (
+				9EC209C11A109008009A7F47 /* Animation3DController.h */,
+				9EC209C21A109008009A7F47 /* Animation3DController.m */,
+				9EC209C61A1093B3009A7F47 /* Animation3DController.xib */,
+				9EC209C81A109B2E009A7F47 /* CoordinateLineUtil.h */,
+				9EC209C91A109B2E009A7F47 /* CoordinateLineUtil.m */,
+				9EC209CB1A10A55C009A7F47 /* SWAnimation3DUtil.h */,
+				9EC209CC1A10A55C009A7F47 /* SWAnimation3DUtil.m */,
+				9EC209D61A11E36B009A7F47 /* sakula.jpg */,
+				9EC209DC1A1207A5009A7F47 /* sakula_l.png */,
+			);
+			path = Animation3D;
+			sourceTree = "<group>";
+		};
+		9EC209CE1A10A6C5009A7F47 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				9EC209CF1A10A6EF009A7F47 /* UIView+Sizes */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		9EC209CF1A10A6EF009A7F47 /* UIView+Sizes */ = {
+			isa = PBXGroup;
+			children = (
+				9EC209D01A10A6EF009A7F47 /* UIView+Sizes.h */,
+				9EC209D11A10A6EF009A7F47 /* UIView+Sizes.m */,
+			);
+			path = "UIView+Sizes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,6 +545,11 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "苏州知惠馆信息系统有限公司";
+				TargetAttributes = {
+					8BE2BA5A157CBA020084027B = {
+						DevelopmentTeam = S544T4W3Q3;
+					};
+				};
 			};
 			buildConfigurationList = 8BE2BA55157CBA020084027B /* Build configuration list for PBXProject "CoreAnimationTestSW" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -541,13 +599,16 @@
 				5F3A210C15995C0400D0A470 /* shop_show_detail_2.png in Resources */,
 				5F3A210D15995C0400D0A470 /* shop_show_detail_2@2x.png in Resources */,
 				5F3A210E15995C0400D0A470 /* shop_show_detail_3.png in Resources */,
+				9EC209DD1A1207A5009A7F47 /* sakula_l.png in Resources */,
 				5F3A210F15995C0400D0A470 /* shop_show_detail_3@2x.png in Resources */,
 				5F3A211015995C0400D0A470 /* shop_show_detail_4.png in Resources */,
 				5F3A211115995C0400D0A470 /* shop_show_detail_4@2x.png in Resources */,
 				5F8B35651599AB6E0015ACB1 /* AnimationPauseViewController.xib in Resources */,
+				9EC209C71A1093B3009A7F47 /* Animation3DController.xib in Resources */,
 				5F8B356B1599AC590015ACB1 /* Soccer.png in Resources */,
 				5FE08E4C15AC1A3800B240DF /* mediaTimingViewController.xib in Resources */,
 				5FA23D2F15AD2EEE0026F29F /* OtherLayerViewController.xib in Resources */,
+				9EC209D71A11E36B009A7F47 /* sakula.jpg in Resources */,
 				5F76C67B15B3C40C00A700CF /* ReplicatorViewController.xib in Resources */,
 				5F106BF015B3F60600459A59 /* AppReplicatorViewController.xib in Resources */,
 				5F6839DB15B6489D00450CAB /* DrawCircleViewController.xib in Resources */,
@@ -572,8 +633,10 @@
 				8B9D76961581FB8F00AA260A /* ContextArcViewController.m in Sources */,
 				8B9D769B1581FBB700AA260A /* ContextArcView.m in Sources */,
 				8B9D76B2158209CE00AA260A /* GraphicsView.m in Sources */,
+				9EC209CD1A10A55C009A7F47 /* SWAnimation3DUtil.m in Sources */,
 				8B9D76B3158209CE00AA260A /* GraphicsViewController.m in Sources */,
 				5F7725A5158EFF86002A7930 /* Animation2_1.m in Sources */,
+				9EC209CA1A109B2E009A7F47 /* CoordinateLineUtil.m in Sources */,
 				5F7725AD158F0059002A7930 /* CALayer+Creat.m in Sources */,
 				5FC0E92615906C6200BAA92B /* Animation3_1.m in Sources */,
 				5F2F9F241592CCFF00C3C9FE /* Animation4_1.m in Sources */,
@@ -584,6 +647,8 @@
 				5F3E7BD315AE711400AE64A7 /* ReplicatorView.m in Sources */,
 				5F76C67A15B3C40C00A700CF /* ReplicatorViewController.m in Sources */,
 				5F106BEF15B3F60600459A59 /* AppReplicatorViewController.m in Sources */,
+				9EC209C31A109008009A7F47 /* Animation3DController.m in Sources */,
+				9EC209D21A10A6EF009A7F47 /* UIView+Sizes.m in Sources */,
 				5F6839DA15B6489D00450CAB /* DrawCircleViewController.m in Sources */,
 				5F6839E415B66C2C00450CAB /* BezierViewController.m in Sources */,
 				5F683A1F15B69DB000450CAB /* CustomLayer.m in Sources */,
@@ -651,11 +716,15 @@
 		8BE2BA7A157CBA020084027B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEVELOPMENT_TEAM = S544T4W3Q3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreAnimationTestSW/CoreAnimationTestSW-Prefix.pch";
 				INFOPLIST_FILE = "CoreAnimationTestSW/CoreAnimationTestSW-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c776ee83-27e8-4f82-bf76-c746d5fbb6b5";
+				PROVISIONING_PROFILE_SPECIFIER = "bdmapdevxing-xxl";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -663,11 +732,13 @@
 		8BE2BA7B157CBA020084027B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoreAnimationTestSW/CoreAnimationTestSW-Prefix.pch";
 				INFOPLIST_FILE = "CoreAnimationTestSW/CoreAnimationTestSW-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a59a9310-5987-48c4-a58d-af21fd304dda";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

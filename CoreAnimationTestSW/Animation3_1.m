@@ -32,7 +32,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self animationTest];
+    [self animationTest1];
 }
 
 - (void)viewDidUnload
@@ -85,9 +85,8 @@
     
     [myLayer setPosition:CGPointMake(20, 30)];
     
-//    [myLayer addAnimation:group forKey:nil];//执行setPosition默认动画
+    [myLayer addAnimation:group forKey:nil];//执行setPosition默认动画
     [myLayer addAnimation:group forKey:@"sgd"];//执行 group动画;
-
     
 }
 
@@ -111,7 +110,10 @@
     
     [group setAnimations:[NSArray arrayWithObjects:animation,animationBounds, nil]];
     
-    [myLayer addAnimation:group forKey:@"sdfuf11i"];
+//    [myLayer addAnimation:group forKey:@"sdfuf11i"];
+    
+    [myLayer addAnimation:animationBounds forKey:@"sgd1"];
+    [myLayer addAnimation:animation forKey:@"sgd2"];
 }
 
 - (void)animationIsFlip:(BOOL)isFlip{

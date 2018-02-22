@@ -27,6 +27,10 @@
 }
 
 - (void)drawInContext:(CGContextRef)ctx{
+//    static NSInteger i = 0;
+//    i++;
+//    NSLog(@"%s :%ld",__func__, (long)i);
+    
     CGContextSaveGState(ctx);
     CGContextAddEllipseInRect(ctx, CGRectInset(self.bounds, margin, margin));
     

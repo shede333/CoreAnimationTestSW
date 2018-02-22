@@ -23,6 +23,7 @@
 #import "AppReplicatorViewController.h"
 #import "DrawCircleViewController.h"
 #import "CustomPropertyViewController.h"
+#import "Animation3DController.h"
 
 @interface CoreAnimationViewController ()
 
@@ -79,7 +80,46 @@
     [super dealloc];
 }
 
+#pragma mark - Function - Private
 
+- (void)myAddMArr{
+    mArr = [[NSMutableArray alloc] initWithCapacity:20];
+    
+    [mArr addObject:@{@"class_name":@"Animation3DController",
+                      @"title":@"Animation3DController"}];
+    [mArr addObject:@{@"class_name":@"BasicViewController",
+                      @"title":@"Basic"}];
+    [mArr addObject:@{@"class_name":@"KeyFrameViewController",
+                      @"title":@"KeyFrame"}];
+    [mArr addObject:@{@"class_name":@"ContextArcViewController",
+                      @"title":@"ContextArc"}];
+    [mArr addObject:@{@"class_name":@"GraphicsViewController",
+                      @"title":@"GraphicsView"}];
+    [mArr addObject:@{@"class_name":@"Animation2_1",
+                      @"title":@"Animation2_1"}];
+    [mArr addObject:@{@"class_name":@"Animation3_1",
+                      @"title":@"Animation3_1"}];
+    [mArr addObject:@{@"class_name":@"Animation4_1",
+                      @"title":@"Animation4_1"}];
+    [mArr addObject:@{@"class_name":@"KeyFrameValue",
+                      @"title":@"KeyFrameValue"}];
+    [mArr addObject:@{@"class_name":@"AnimationPauseViewController",
+                      @"title":@"AnimationPause"}];
+    [mArr addObject:@{@"class_name":@"mediaTimingViewController",
+                      @"title":@"mediaTiming"}];
+    [mArr addObject:@{@"class_name":@"OtherLayerViewController",
+                      @"title":@"OtherLayer"}];
+    [mArr addObject:@{@"class_name":@"ReplicatorViewController",
+                      @"title":@"Replicator"}];
+    [mArr addObject:@{@"class_name":@"AppReplicatorViewController",
+                      @"title":@"AppReplicator"}];
+    [mArr addObject:@{@"class_name":@"DrawCircleViewController",
+                      @"title":@"DrawCircle"}];
+    [mArr addObject:@{@"class_name":@"CustomPropertyViewController",
+                      @"title":@"CustomProperty"}];
+    
+    
+}
 
 #pragma mark - UITableView
 
@@ -94,160 +134,19 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
-    cell.textLabel.text = [mArr objectAtIndex:indexPath.row];
+    cell.textLabel.text = [mArr objectAtIndex:indexPath.row][@"title"];
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    switch (indexPath.row) {
-        case 0:
-        {
-            BasicViewController *basic = [[BasicViewController alloc] initWithNibName:@"BasicViewController" bundle:nil];
-            [self.navigationController pushViewController:basic animated:YES];
-            [basic release];
-        }
-            break;
-        case 1:
-        {
-            KeyFrameViewController *basic = [[KeyFrameViewController alloc] initWithNibName:@"KeyFrameViewController" bundle:nil];
-            [self.navigationController pushViewController:basic animated:YES];
-            [basic release];
-        }
-            break;
-        case 2:
-        {
-            ContextArcViewController *basic = [[ContextArcViewController alloc] initWithNibName:@"ContextArcViewController" bundle:nil];
-            [self.navigationController pushViewController:basic animated:YES];
-            [basic release];
-        }
-            break;
-        case 3:
-        {
-            GraphicsViewController *basic = [[GraphicsViewController alloc] initWithNibName:@"GraphicsViewController" bundle:nil];
-            [self.navigationController pushViewController:basic animated:YES];
-            [basic release];
-        }
-            break;
-        case 4:
-        {
-            Animation2_1 *basic = [[Animation2_1 alloc] initWithNibName:@"Animation2_1" bundle:nil];
-            [self.navigationController pushViewController:basic animated:YES];
-            [basic release];
-        }
-            break;
-        case 5:
-        {
-            Animation3_1 *basic = [[Animation3_1 alloc] initWithNibName:@"Animation3_1" bundle:nil];
-            [self.navigationController pushViewController:basic animated:YES];
-            [basic release];
-        }
-            break;
-        case 6:
-        {
-            Animation4_1 *basic = [[Animation4_1 alloc] initWithNibName:@"Animation4_1" bundle:nil];
-            [self.navigationController pushViewController:basic animated:YES];
-            [basic release];
-        }
-            break;
-        case 7:
-        {
-            KeyFrameValue *basic = [[KeyFrameValue alloc] initWithNibName:@"KeyFrameValue" bundle:nil];
-            [self.navigationController pushViewController:basic animated:YES];
-            [basic release];
-        }
-            break;
-        case 8:
-        {
-            AnimationPauseViewController *basic = [[AnimationPauseViewController alloc] initWithNibName:@"AnimationPauseViewController" bundle:nil];
-            [self.navigationController pushViewController:basic animated:YES];
-            [basic release];
-        }
-            break;
-        case 9:
-        {
-            mediaTimingViewController *basic = [[mediaTimingViewController alloc] initWithNibName:@"mediaTimingViewController" bundle:nil];
-            [self.navigationController pushViewController:basic animated:YES];
-            [basic release];
-        }
-            break;
-        case 10:
-        {
-            OtherLayerViewController *basic = [[OtherLayerViewController alloc] initWithNibName:@"OtherLayerViewController" bundle:nil];
-            [self.navigationController pushViewController:basic animated:YES];
-            [basic release];
-        }
-            break;
-        case 11:
-        {
-            ReplicatorViewController *basic = [[ReplicatorViewController alloc] initWithNibName:@"ReplicatorViewController" bundle:nil];
-            [self.navigationController pushViewController:basic animated:YES];
-            [basic release];
-        }
-            break;
-        case 12:
-        {
-            AppReplicatorViewController *basic = [[AppReplicatorViewController alloc] initWithNibName:@"AppReplicatorViewController" bundle:nil];
-            [self.navigationController pushViewController:basic animated:YES];
-            [basic release];
-        }
-            break;
-        case 13:
-        {
-            DrawCircleViewController *basic = [[DrawCircleViewController alloc] initWithNibName:@"DrawCircleViewController" bundle:nil];
-            [self.navigationController pushViewController:basic animated:YES];
-            [basic release];
-        }
-            break;
-        case 14:
-        {
-            CustomPropertyViewController *basic = [[CustomPropertyViewController alloc] initWithNibName:@"CustomPropertyViewController" bundle:nil];
-            [self.navigationController pushViewController:basic animated:YES];
-            [basic release];
-        }
-            break;
-        default:
-            break;
-    }
+    NSString *class_str = mArr[indexPath.row][@"class_name"];
+    UIViewController *tmpVC = [[NSClassFromString(class_str) alloc] initWithNibName:class_str bundle:nil];
+    [self.navigationController pushViewController:tmpVC animated:YES];
+    [tmpVC release];
 }
 
-- (void)myAddMArr{
-    mArr = [[NSMutableArray alloc] initWithCapacity:20];
-    
-    [mArr addObject:@"Basic"];
-    [mArr addObject:@"KeyFrame"];
-    [mArr addObject:@"ContextArc"];
-    [mArr addObject:@"GraphicsView"];
-    [mArr addObject:@"Animation2_1"];
-    [mArr addObject:@"Animation3_1"];
-    [mArr addObject:@"Animation4_1"];
-    [mArr addObject:@"KeyFrameValue"];
-    [mArr addObject:@"AnimationPause"];
-    [mArr addObject:@"mediaTiming"];
-    [mArr addObject:@"OtherLayer"];
-    [mArr addObject:@"Replicator"];
-    [mArr addObject:@"AppReplicator"];
-    [mArr addObject:@"DrawCircle"];
-    [mArr addObject:@"CustomProperty"];
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    [mArr addObject:@""];
-    [mArr addObject:@""];
-    [mArr addObject:@""];
-    [mArr addObject:@""];
-    [mArr addObject:@""];
-    [mArr addObject:@""];
-    
-}
+
 
 
 
